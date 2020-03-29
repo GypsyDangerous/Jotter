@@ -87,7 +87,7 @@ const DisplayPage = props => {
             body: formState.inputs.body.value,
             created: new Date().getTime(),
             pinned: false,
-            color: "red"
+            color: "default"
         }
 
         if (mode === "user") {
