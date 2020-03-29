@@ -123,7 +123,6 @@ const DisplayPage = props => {
             {props.notesLocation === "notes" && <div className="newNote" >
                 <input onClick={e => { startCreating(); e.target.blur() }} type="text" placeholder="Take a note..." />
                 <button className="check"><FontAwesomeIcon icon={faCheckSquare} /><p className="Tooltip">New list</p></button>
-                <button className="check"><FontAwesomeIcon icon={faImage} /><p className="Tooltip">New note with image</p></button>
             </div>}
             <div className="App__notes">
                 {notes.map(note => (
