@@ -1,0 +1,6 @@
+.App__notes {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: calc(270px * 5);
+    justify-content: space-around;
+}

@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Google Sans',
+    Roboto,
+    Arial,
+    sans-serif !important;
+}
+
+:root {
+    --border-color:  rgb(117, 115, 115);
+    /* --background-color: linear-gradient(to left, #515151, #202124); */
+    --background-color:  #202124;
+    --input-padding-x: 1.5rem;
+    --input-padding-y: .75rem;
+    --sidebar-width: 250px;
+    --note-red: #5c2b29;
+    --note-green: #345920;
+    --note-blue: #1e3a5f;
+    --note-yellow: #635d19;
+    --note-orange: #614a19;
+    --note-purple: #42275e;
+    --note-pink: #5b2245;
+    --note-teal: #16504b;
+    --grey: #80868b;
+    --light-grey: #dddfe1;
+}
+
+body{
+    height: 100vh;
+    background: var(--background-color) !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    position: relative;
+    top: 100px;
+}
+
+.App{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.App--auth{
+    justify-content: center;
+}
+
+button{
+    outline: none !important;
+}
+
+.newNote {
+    width: 600px;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 5px;
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+    position: relative;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+}
+
+.newNote input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: none;
+    color: var(--grey);
+}
+
+.newNote input::placeholder {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bold !important;
+    background: none;
+    color: var(--grey);
+}
+
+.newNote :nth-child(2){
+    margin-right: 10px;
+}
+
+.check {
+    background: none;
+    border: none;
+    outline: none !important;
+    font-size: 1.5rem;
+    min-width: 40px;
+    min-height: 40px;
+    color: var(--grey);
+    border-radius: 50%;
+    transition: all .15s ease-in-out;
+    position: relative;
+}
+
+.Tooltip {
+    font-size: .75rem;
+    background: rgba(60, 64, 67, 0.90);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    min-width: 60px;
+    width: fit-content !important;
+    /* opacity: 0; */
+    transition: all .25s ease-in-out;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    display: none !important;
+}
+
+.color__tooltip{
+    top: 75%;
+}
+
+svg:hover ~ .Tooltip, 
+.color__tooltip:hover > .Tooltip, 
+.color__tooltip:hover, 
+.color:hover > .Tooltip {
+    display: grid !important;
+    
+}
+
+.Tooltip:not(.color__tooltip):hover {
+    display: none !important
+    
+}
+
+.check:hover {
+    background: rgba(154, 160, 166, .175)
+}
+
+body::-webkit-scrollbar {
+    width: .5rem;
+    height: .5rem;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    border-radius: 1rem;
+}
+
+.empty{
+    color: grey;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.large-icon{
+    font-size: 7rem;
+    color: grey;
+    position: relative;
+    top: -40px;
+}

@@ -1,0 +1,69 @@
+.sidebar{
+    position: fixed;
+    top: 64px;
+    height: calc(100vh - 64px);
+    width: var(--sidebar-width);
+    transition: all .35s ease-in-out;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    left: -280px;
+    background: var(--background-color)
+}
+
+ hr{
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;
+    background-color:gray;
+    height: 1px;
+}
+
+.option{
+    width: 100%;
+    margin-top: 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    border-radius: 0 50px 50px 0;
+    color: white !important
+}
+
+.option span{
+    margin-left: 25px;
+}
+
+.option:hover{
+    background: rgba(154, 160, 166, .35)
+}
+
+.option-active{
+    background-color: #41331c
+}
+
+.my-node-enter-done {
+    left: 0px;
+}
+
+.my-node-exit-done {
+    left: -var(--sidebar-width);
+    
+}
+
+.my-node-exit-done ~ .container {
+    animation: slide .35s reverse forwards ease-in-out;
+}
+
+.my-node-enter-done ~ .container{
+    animation: slide .35s forwards ease-in-out;
+}
+
+@keyframes slide{
+    from{
+        padding-left: 0;
+    }to{
+        padding-left: var(--sidebar-width)
+    }
+}
