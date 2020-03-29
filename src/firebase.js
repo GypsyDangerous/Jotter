@@ -2,6 +2,8 @@ import firebase from "firebase"
 import "firebase/auth"
 require('dotenv').config()
 
+console.log(process.env)
+
 const config = {
     apiKey: "AIzaSyCboAL_a92MBMnCGlV0VYb4Ui2WZUtxBTc",
     authDomain: "jotter-8c0cd.firebaseapp.com",
@@ -16,6 +18,5 @@ const config = {
 firebase.initializeApp(config);
 firebase.analytics();
 
-console.log(process.env)
 
 export default firebase
