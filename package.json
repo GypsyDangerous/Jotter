@@ -12,6 +12,7 @@
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
+    "dotenv": "^8.2.0",
     "firebase": "^7.9.3",
     "i": "^0.3.6",
     "markdown-react-js": "^1.0.2",
