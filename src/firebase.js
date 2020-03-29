@@ -2,7 +2,7 @@ import firebase from "firebase"
 import "firebase/auth"
 
 const config = {
-    apiKey: process.env.GOOGLE_API_KEY,
+    apiKey: "AIzaSyCboAL_a92MBMnCGlV0VYb4Ui2WZUtxBTc",
     authDomain: "jotter-8c0cd.firebaseapp.com",
     databaseURL: "https://jotter-8c0cd.firebaseio.com",
     projectId: "jotter-8c0cd",
