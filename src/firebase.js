@@ -1,6 +1,6 @@
 import firebase from "firebase"
 import "firebase/auth"
-require('dotenv').config()
+
 
 
 const config = {
