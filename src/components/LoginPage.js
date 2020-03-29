@@ -48,7 +48,7 @@ const LoginPage = ({ history, match }) => {
             await firebase.auth().setPersistence(firebase.auth.Auth.Persistence.NONE)
         }
         const provider = new firebase.auth.GoogleAuthProvider();
-        const result = await firebase.auth().signInWithPopup(provider)
+        const result = await firebase.auth().signInWithRedirect(provider)
         const user = result.user
         firebase.firestore().collection("users").doc(user.uid).set({
             name: user.displayName,
