@@ -177,6 +177,6 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 600px){
     .container{
-        max-width: 600px !important;
+        max-width: 600px !important; 
     }
 }
