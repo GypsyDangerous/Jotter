@@ -2,10 +2,9 @@ import firebase from "firebase"
 import "firebase/auth"
 require('dotenv').config()
 
-console.log(process.env)
 
 const config = {
-    apiKey: "AIzaSyCboAL_a92MBMnCGlV0VYb4Ui2WZUtxBTc",
+    apiKey: process.env.REACT_APP_GOOGLE_API_KEY,
     authDomain: "jotter-8c0cd.firebaseapp.com",
     databaseURL: "https://jotter-8c0cd.firebaseio.com",
     projectId: "jotter-8c0cd",
