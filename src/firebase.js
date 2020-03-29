@@ -1,5 +1,6 @@
 import firebase from "firebase"
 import "firebase/auth"
+require('dotenv').config()
 
 const config = {
     apiKey: "AIzaSyCboAL_a92MBMnCGlV0VYb4Ui2WZUtxBTc",
