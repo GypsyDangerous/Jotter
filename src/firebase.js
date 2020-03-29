@@ -5,13 +5,13 @@ import "firebase/auth"
 
 const config = {
     apiKey: process.env.REACT_APP_GOOGLE_API_KEY,
-    authDomain: "jotter-8c0cd.firebaseapp.com",
-    databaseURL: "https://jotter-8c0cd.firebaseio.com",
-    projectId: "jotter-8c0cd",
-    storageBucket: "jotter-8c0cd.appspot.com",
-    messagingSenderId: "517406836732",
-    appId: "1:517406836732:web:0ae80dd8cc94a33220d479",
-    measurementId: "G-S0FXZKJBQ9"
+    authDomain: "jotter-2.firebaseapp.com",
+    databaseURL: "https://jotter-2.firebaseio.com",
+    projectId: "jotter-2",
+    storageBucket: "jotter-2.appspot.com",
+    messagingSenderId: "114745109987",
+    appId: "1:114745109987:web:f2c5e3245c1243ba1f04d6",
+    measurementId: "G-LEPQ56MCQW"
 };
 // Initialize Firebase
 firebase.initializeApp(config);
