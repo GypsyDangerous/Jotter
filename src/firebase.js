@@ -15,4 +15,6 @@ const config = {
 firebase.initializeApp(config);
 firebase.analytics();
 
+console.log(process.env)
+
 export default firebase
